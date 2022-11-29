@@ -1,0 +1,125 @@
+/* styles du formaulaire d'ajout et de modification*/
+.recipeForm{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e5e5e557;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.recipeForm label{
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+.fieldContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fieldContainer input, .fieldContainer select{
+    width: 60%;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border-style: none;
+    border: 1px solid var(--text-gray);
+    padding: 0.2rem 0.5rem;
+}
+.fieldContainer input:focus-visible, .fieldContainer select:focus-visible{
+    outline: 1px solid var(--text-orange);
+}
+.errorMessage{
+    color: brown;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+.ingFieldCtnr, .stepFieldCtnr{
+    display: flex;
+    align-items: end;
+}
+.ingFieldCtnr>div, .stepFieldCtnr>div{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: baseline;
+}
+.ingFieldCtnr>div input, .stepFieldCtnr>div input{
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border-style: none;
+    border: 1px solid var(--text-gray);
+    padding: 0.2rem 0.5rem;
+}
+.ingFieldCtnr>div button, .stepFieldCtnr>div button{
+    display: flex;
+    align-items: center;
+    border-style: none;
+    background-color: transparent;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+.ingFieldCtnr>div button svg, .stepFieldCtnr>div button svg{
+    margin-right: 5px;
+}
+.btnSend{
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    color: var(--text-orange);
+    border: 1px solid var(--text-orange);
+}
+.btnSend:hover{
+    background-color: var(--text-white);
+}
+.ingList li, .stepList li{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    width: fit-content;
+}
+.ingList li:hover, .stepList li:hover{
+    cursor: pointer;
+    background-color: var(--text-light-gray);
+    border-radius: 5px;
+}
+.ingList li span, .stepList li span{
+    margin-right: 10px;
+}
+.ingList li button, .stepList li button{
+    color: red;
+    border-style: none;
+    background-color: transparent;
+}
+.ingList li button svg, .stepList li button svg{
+    font-size: 1.2rem;
+}
+/* styles du formaulaire d'ajout et de modification*/
+
+/***** media queries *****/
+@media screen and (max-width: 576px){
+    .recipeForm{
+        width: 100%;
+    }
+    .fieldContainer{
+        margin-bottom: 10px;
+    }
+    .ingFieldCtnr, .stepFieldCtnr{
+        flex-direction: column;
+        align-items: start;
+    }
+  }
+  @media screen and (min-width: 576px){
+    .recipeForm{
+        width: 100%;
+    }
+    .fieldContainer{
+        margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 992px){
+    .recipeForm{
+        width: 80%;
+    }
+}
+  /***** fin media queries *****/

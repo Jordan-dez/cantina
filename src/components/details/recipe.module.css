@@ -1,0 +1,112 @@
+/*styles de la section info sur une recette*/
+.textLead{
+    font-size: 1.2rem;
+}
+.recipeInfo img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 50%;
+    border-radius: 15px;
+}
+.infoContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.infoContainer span{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.infoContainer span svg{
+    font-size: 30px;
+    fill: var(--text-orange);
+    color: var(--text-orange);
+    margin-right: 10px;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+.btnContainer>*{
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+.btnContainer a{
+    text-decoration: none;
+    color: var(--text-orange);
+    border: 1px solid var(--text-orange);
+}
+.btnContainer a:hover{
+    color: var(--text-orange);
+}
+.btnContainer button{
+    color: var(--text-white);
+    background-color: var(--text-orange);
+}
+.ingContainer{
+    padding-left: 30px;
+}
+.ingContainer h2{
+    padding-top: 15px;
+    border-top: 1px solid var(--text-light-gray);
+}
+.ingContainer ul li{
+    font-size: 1.2rem;
+    width: 60%;
+    color: var(--text-gray);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ff6f6147;
+}
+/*fin styles de la section info sur une recette*/
+
+/* styles de la section des étapes d'une recette*/
+.stepContainer h2{
+    padding-top: 15px;
+    border-top: 1px solid var(--text-light-gray);
+}
+.stepContainer span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-orange);
+    font-family: var(--text-marhey);
+}
+.stepContainer p{
+    font-size: 1.1rem;
+}
+/* styles de la section des étapes d'une recette*/
+
+/***** media queries *****/
+@media screen and (max-width: 576px){
+    .infoContainer span{
+        font-size: 1rem;
+    }
+    .infoContainer span svg{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .btnContainer{
+        margin-bottom: 1rem;
+    }
+    .ingContainer ul li{
+        width: 100%;
+    }
+  }
+  @media screen and (min-width: 576px){
+    .btnContainer{
+        margin-bottom: 1rem;
+    }
+    .ingContainer ul li{
+        width: 80%;
+    }
+  }
+  @media screen and (min-width: 992px){
+    .btnContainer{
+        margin-bottom: 0;
+    }
+}
+  /***** fin media queries *****/

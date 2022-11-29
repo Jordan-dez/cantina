@@ -1,0 +1,100 @@
+/*styles du header*/
+.mak-navbar{
+  padding: 0.8rem 0;
+  position: fixed;
+  background-color: var(--bg-white);
+  box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.10);
+  z-index: 4;
+}
+.mak-navbar .row{
+  align-items: center;
+}
+.mak-navbar .mak-brand{
+  font-family: var(--text-marhey);
+  color: var(--text-orange);
+  font-size: 2.5rem;
+}
+.btn-burger{
+  border-style: none;
+  color: var(--text-orange);
+  background-color: transparent;
+  border: 1px solid var(--text-light-gray);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+}
+.mak-navbar .mak-nav ul{
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 0;
+}
+.mak-navbar .mak-nav ul li{
+  margin: 0 1rem;
+}
+.mak-navbar .mak-nav ul li a{
+  color: var(--text-gray);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 300;
+}
+.mak-navbar .mak-nav ul li a:hover{
+  color: var(--text-orange);
+}
+.mak-navbar .mak-nav ul li .active{
+  color: var(--text-orange);
+  font-weight: 600;
+}
+/*fin styles du header*/
+
+/*Styles du footer*/
+footer{
+  padding-top: 0.8rem;
+  border-top: 1px solid #d4d4d4;
+}
+footer .gitlab span{
+  color: var(--text-gray);
+}
+footer .gitlab span:hover{
+  text-decoration: underline !important;
+  text-decoration-color: var(--text-gray) !important;
+}
+footer .gitlab svg{
+  font-size: 1.3rem;
+  color: var(--text-orange);
+}
+footer .copyright{
+  color: var(--text-gray);
+  font-weight: 300;
+}
+footer .copyright span{
+  font-family: var(--text-marhey);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text-orange);
+}
+/*fin Styles du footer*/
+
+/***** media queries *****/
+@media screen and (max-width: 576px){
+  .mak-navbar .mak-brand{
+    font-size: 1.8rem;
+  }
+  .mak-navbar .row{
+    align-items: start;
+  }
+  .mak-navbar .mak-nav ul{
+    flex-direction: column;
+    align-items: end;
+  }
+  .mak-navbar .mak-nav ul li a{
+    font-size: 1rem
+  }
+}
+@media screen and (min-width: 576px){
+  .mak-navbar .mak-nav{
+    display: block !important;
+  }
+}
+/***** fin media queries *****/
